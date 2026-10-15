@@ -1,0 +1,22 @@
+{
+  "name": "zenvybrowser",
+  "version": "1.0.0",
+  "description": "Navegador de internet com Chromium, interface própria em HTML, CSS e JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YanElias/ZenvyBrowser.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/YanElias/ZenvyBrowser/issues"
+  },
+  "homepage": "https://github.com/YanElias/ZenvyBrowser#readme",
+  "devDependencies": {
+    "electron": "^44.7.2"
+  }
+}
