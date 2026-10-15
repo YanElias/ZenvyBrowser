@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10120f">
+  <title>Zenvy Browser</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="browser">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">Z</div>
+        <span>zenvy</span>
+      </div>
+
+      <button class="side-item active" title="Início">
+        <span>⌂</span><span>Início</span>
+      </button>
+      <button class="side-item" title="Favoritos">
+        <span>☆</span><span>Favoritos</span>
+      </button>
+      <button class="side-item" title="Histórico">
+        <span>◷</span><span>Histórico</span>
+      </button>
+      <button class="side-item" title="Downloads">
+        <span>↓</span><span>Downloads</span>
+      </button>
+
+      <div class="sidebar-bottom">
+        <div class="profile">
+          <div class="avatar">Y</div>
+          <div class="profile-text">
+            <strong>Meu perfil</strong>
+            <small>Navegação pessoal</small>
+          </div>
+          <span>···</span>
+        </div>
+        <div class="version">ZENVY · PREVIEW 0.1</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="toolbar">
+        <div class="nav-buttons">
+          <button class="icon-button" id="back" title="Voltar">←</button>
+          <button class="icon-button" id="forward" title="Avançar">→</button>
+          <button class="icon-button" id="reload" title="Recarregar">↻</button>
+        </div>
+
+        <form class="address-form" id="addressForm">
+          <span class="lock">⌕</span>
+          <input id="address" type="text"
+            placeholder="Pesquise ou digite um endereço..."
+            autocomplete="off">
+          <button type="submit" title="Ir">↵</button>
+        </form>
+
+        <button class="icon-button new-tab" id="newTab" title="Nova aba">＋</button>
+      </header>
+
+      <section class="content">
+        <div class="welcome">
+          <div class="status"><span></span> SEU NOVO JEITO DE EXPLORAR</div>
+
+          <div class="logo-large">z<span>e</span>nvy<span class="dot">.</span></div>
+
+          <h1>A internet,<br><span>do seu jeito.</span></h1>
+          <p>Um novo espaço para descobrir, criar e explorar.</p>
+
+          <form class="search-form" id="searchForm">
+            <span>⌕</span>
+            <input id="homeSearch" placeholder="O que vamos descobrir hoje?"
+              autocomplete="off">
+            <button type="submit">Explorar <span>↗</span></button>
+          </form>
+
+          <div class="quick-label">SEUS ATALHOS</div>
+          <div class="shortcuts">
+            <button class="shortcut" data-url="https://www.youtube.com">
+              <span class="shortcut-icon youtube">▶</span>
+              <span>YouTube</span>
+            </button>
+            <button class="shortcut" data-url="https://www.google.com">
+              <span class="shortcut-icon google">G</span>
+              <span>Google</span>
+            </button>
+            <button class="shortcut" data-url="https://github.com">
+              <span class="shortcut-icon github">⌘</span>
+              <span>GitHub</span>
+            </button>
+            <button class="shortcut" data-url="https://www.wikipedia.org">
+              <span class="shortcut-icon wiki">W</span>
+              <span>Wikipedia</span>
+            </button>
+          </div>
+
+          <div class="bottom-note">
+            <span>✳</span> Feito para explorar sem limites.
+            <span class="bottom-version">ZENVY BROWSER</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
